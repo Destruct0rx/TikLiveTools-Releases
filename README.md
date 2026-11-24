@@ -1,21 +1,12 @@
-<div align="center">
+<p align="center"><img src="assets/tiklivetools-brand.webp" alt="TikLiveTools" width="336" height="91"></p>
 
-# TikLiveTools
+**Alertas, animaciones y overlays para TikTok LIVE Studio.**
 
-### Personaliza tu TikTok LIVE. A tu manera.
+Windows 10/11 x64 · Portable · Gratuito · Sin registro
 
-Herramienta de escritorio portable para crear alertas, animaciones y overlays personalizados para TikTok LIVE Studio.
+[**Descargas oficiales**](https://github.com/Destruct0rx/TikLiveTools-Releases/releases) · [Página oficial y manual](https://tiklivetools.ultimares.store/)
 
-**Windows 10 / 11 · 64 bits · Gratuito · Sin inicio de sesión**
-
-[**Página oficial**](https://tiklivetools.ultimares.store/) &nbsp;·&nbsp; [**Versiones y descargas**](https://github.com/Destruct0rx/TikLiveTools-Releases/releases) &nbsp;·&nbsp; [**Documentación y ayuda**](https://tiklivetools.ultimares.store/)
-
-</div>
-
----
-
-> [!NOTE]
-> **Estado del proyecto: en desarrollo.** Este es el repositorio oficial de distribución. Las funciones descritas forman parte del alcance del programa; las notas de cada versión indicarán cuáles están disponibles y verificadas. Si todavía no existe un ZIP portable en una publicación estable, no hay una descarga estable disponible.
+**Estado:** en desarrollo. Consulta las publicaciones para conocer las funciones verificadas y la disponibilidad de una versión estable.
 
 ## ¿Qué es TikLiveTools?
 
@@ -157,12 +148,4 @@ Cuando informes de un problema, indica la versión del programa, tu versión de 
 
 ---
 
-<div align="center">
-
-**TikLiveTools**
-
-[Web oficial](https://tiklivetools.ultimares.store/) &nbsp;·&nbsp; [GitHub Releases](https://github.com/Destruct0rx/TikLiveTools-Releases/releases)
-
-Proyecto independiente, no afiliado a TikTok. Este repositorio está destinado a la distribución del portable; no contiene su código fuente.
-
-</div>
+Proyecto independiente, no afiliado a TikTok. Este repositorio distribuye el portable; no contiene su código fuente.
