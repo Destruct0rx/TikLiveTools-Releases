@@ -1,151 +1,163 @@
-<p align="center"><img src="assets/tiklivetools-brand.webp" alt="TikLiveTools" width="336" height="91"></p>
+<div align="center">
 
-**Alertas, animaciones y overlays para TikTok LIVE Studio.**
+<img src="assets/tiklivetools-brand.webp" alt="TikLiveTools" width="336" height="91">
 
-Windows 10/11 x64 · Portable · Gratuito · Sin registro
+**Tu LIVE. Tus alertas. Tu estilo.**
 
-[**Descargas oficiales**](https://github.com/Destruct0rx/TikLiveTools-Releases/releases) · [Página oficial y manual](https://tiklivetools.ultimares.store/)
+Personaliza alertas, animaciones y recursos multimedia para TikTok LIVE Studio.
 
-**Estado:** en desarrollo. Consulta las publicaciones para conocer las funciones verificadas y la disponibilidad de una versión estable.
+**Windows 10/11 x64 · Portable · Gratuito · Sin inicio de sesión**
 
-## ¿Qué es TikLiveTools?
+<a href="https://github.com/Destruct0rx/TikLiveTools-Releases/releases"><img src="assets/action-download.svg" alt="Consultar versiones y descargas oficiales" width="218" height="42"></a>
+<a href="https://tiklivetools.ultimares.store/"><img src="assets/action-website.svg" alt="Abrir web oficial y documentación" width="186" height="42"></a>
 
-TikLiveTools está pensado para creadores que desean controlar cómo se presentan los eventos de sus transmisiones sin depender de herramientas de pago, de OBS ni de un inicio de sesión en TikLiveTools.
+[Descargas](#descargas) · [Funciones](#funciones) · [Primeros pasos](#primeros-pasos) · [Ayuda](#ayuda)
 
-La idea es sencilla: conectar tu LIVE mediante tu **@usuario de TikTok**, personalizar las reglas y recursos de cada evento, comprobar el resultado antes de transmitir y capturar el overlay en TikTok LIVE Studio.
+</div>
 
-### Un programa, cinco áreas de trabajo
+---
 
-| Área | Qué podrás hacer |
+## Descargas
+
+**Estado del proyecto: en desarrollo.** Si todavía no existe una publicación estable con un ZIP portable adjunto, la descarga estable aún no está disponible. Las notas de cada versión identificarán sus funciones verificadas y limitaciones.
+
+| Plataforma | Distribución |
 | :--- | :--- |
-| **Inicio** | Consultar el estado de conexión, la actividad y el resumen de la sesión. |
-| **Alertas** | Configurar regalos, monedas, rachas, stickers y otros eventos compatibles. |
-| **Animaciones** | Personalizar eventos de comunidad y combinaciones de roles. |
-| **Simulador** | Probar las alertas y sus recursos antes de emitir en directo. |
-| **Ajustes** | Configurar la conexión, el overlay y las opciones de diagnóstico. |
+| Windows 10/11 de 64 bits | ZIP portable, sin instalador |
 
-### Personalización a tu medida
+[**Consultar versiones oficiales →**](https://github.com/Destruct0rx/TikLiveTools-Releases/releases)
 
-| Función prevista | Descripción |
+Busca un archivo adjunto con el formato `TikLiveTools-Portable-vX.Y.Z-win-x64.zip`. Es un ejemplo de nombre, no una versión disponible. No confundas el portable con los archivos automáticos **Source code (zip)** o **Source code (tar.gz)** ni una versión preliminar con una estable.
+
+## Funciones
+
+TikLiveTools está diseñado para convertir eventos compatibles de TikTok LIVE en alertas personalizadas, sin exigir OBS, una suscripción o una cuenta de TikLiveTools. Cada creador puede elegir su propia identidad visual.
+
+### Cinco áreas de trabajo
+
+| Área | Función prevista |
 | :--- | :--- |
-| Regalos y rachas | Reglas individuales o compartidas por valor en monedas. |
-| Comunidad | Seguidores, moderadores, suscriptores, Super Fans y sus combinaciones de roles. |
-| Biblioteca multimedia | Organización de GIF, imágenes, videos y audio propios. |
-| Estudio vertical 9:16 | Composición por capas, texto, posiciones, escalado y zonas seguras. |
-| Audio y alertas | Recursos visuales y audio independientes; TTS en español sujeto a compatibilidad. |
-| Overlay | Ventana dedicada para capturar en TikTok LIVE Studio. |
+| **Inicio** | Estado de conexión, actividad y resumen de la sesión. |
+| **Alertas** | Regalos, monedas, rachas, stickers y demás eventos compatibles. |
+| **Animaciones** | Recursos para eventos de comunidad y combinaciones de roles. |
+| **Simulador** | Pruebas de eventos y alertas antes de transmitir. |
+| **Ajustes** | Conexión mediante @usuario, overlay y diagnóstico. |
 
-Cada creador podrá elegir su propia identidad visual. Las animaciones y recursos no están limitados a un personaje o estilo específico.
+### Personalización y recursos
 
-## Cómo funciona
+| Herramienta | Funcionamiento previsto |
+| :--- | :--- |
+| Biblioteca de regalos | Búsqueda, imágenes, favoritos y reglas individuales o por valor en monedas. |
+| Comunidad | Seguidores, moderadores, suscriptores y Super Fans. |
+| Biblioteca multimedia | Organizar GIF, imágenes, videos y audio propios. |
+| Estudio 9:16 | Composición por capas, texto dinámico, posiciones, escalado y zonas seguras. |
+| Sonido y video | Audio independiente, reproducción de GIF o video y TTS sujeto a compatibilidad. |
+| Overlay | Ventana dedicada capturable desde TikTok LIVE Studio. |
+
+<details>
+<summary><strong>Ver los ocho eventos de animaciones</strong></summary>
+
+| Evento | Regla prevista |
+| :--- | :--- |
+| Follow | Nuevo seguidor. |
+| Moderador | Rol de moderador. |
+| Suscriptor | Rol de suscriptor. |
+| Super Fan | Rol Super Fan. |
+| Mod + Sub | Combinación de moderador y suscriptor. |
+| Mod + Super Fan | Combinación de moderador y Super Fan. |
+| Sub + Super Fan | Combinación de suscriptor y Super Fan. |
+| Triple VIP | Los tres roles combinados. |
+
+Cada combinación tendrá su propia asignación, evitando duplicar alertas. La recepción efectiva de eventos y roles depende de los datos disponibles en el conector y de la versión publicada.
+
+</details>
+
+### Cómo funciona
 
 ```mermaid
 flowchart TD
-    A["TikTok LIVE / @usuario"] --> B["Motor de eventos"]
+    A["TikTok LIVE · @usuario"] --> B["Motor de eventos"]
+    S["Simulador local"] --> B
     B --> C["Reglas y recursos personalizados"]
-    D["Simulador"] --> B
-    C --> E["Ventana overlay"]
-    E --> F["TikTok LIVE Studio"]
+    C --> D["Ventana overlay"]
+    D --> E["TikTok LIVE Studio"]
 ```
 
-El esquema representa el flujo previsto del programa. La compatibilidad efectiva de los eventos depende de la versión publicada y del estado del servicio de TikTok.
-
-## Descargas oficiales
-
-[**Consultar todas las versiones de TikLiveTools**](https://github.com/Destruct0rx/TikLiveTools-Releases/releases)
-
-| Requisito o característica | Información |
-| :--- | :--- |
-| Sistema operativo objetivo | Windows 10 / 11 |
-| Arquitectura | x64 (64 bits) |
-| Distribución | Archivo ZIP portable |
-| Precio | Gratuito |
-| Registro o autenticación | No requerido |
-| OBS | No obligatorio |
-| Conexión a Internet | Necesaria para recibir eventos del LIVE |
-| Otros requisitos | Consultar las notas de la versión |
-
-Busca un archivo adjunto con un nombre como:
-
-```text
-TikLiveTools-Portable-vX.Y.Z-win-x64.zip
-```
-
-El nombre anterior es un ejemplo del formato de publicación, no una versión disponible.
-
-> [!IMPORTANT]
-> No descargues los archivos automáticos **Source code (zip)** o **Source code (tar.gz)** pensando que son el programa. El portable se publicará como archivo adjunto de una release estable.
+Flujo previsto del programa. La página oficial informa y distribuye; la ejecución y configuración corresponden al programa de escritorio.
 
 ## Primeros pasos
 
-1. **Descarga:** elige una publicación estable y revisa sus requisitos y limitaciones.
-2. **Extrae:** descomprime el ZIP completo en una carpeta local donde tengas permisos de escritura.
-3. **Ejecuta:** abre el programa siguiendo las instrucciones de esa publicación.
-4. **Conecta:** introduce el nombre de usuario de TikTok, por ejemplo `@tuusuario`, en el apartado de conexión. Inicia tu LIVE cuando corresponda y comprueba el estado de conexión.
-5. **Personaliza:** asigna tus animaciones, sonidos y reglas a los eventos compatibles.
-6. **Prueba y transmite:** comprueba las alertas en el simulador y captura la ventana de overlay desde TikTok LIVE Studio.
+1. **Descarga y extrae.** Selecciona una publicación estable, revisa los requisitos y extrae todo el ZIP en una carpeta local con permisos de escritura.
+2. **Ejecuta.** Abre el programa siguiendo las instrucciones de esa versión.
+3. **Conecta tu LIVE.** Introduce tu nombre de usuario, por ejemplo `@tuusuario`, y establece la conexión cuando tu transmisión esté activa. Comprueba el estado de conexión.
+4. **Personaliza.** Asigna recursos, sonidos y reglas a los eventos disponibles.
+5. **Prueba.** Utiliza el simulador antes de emitir las alertas.
+6. **Transmite.** Abre el overlay y captura su ventana en TikTok LIVE Studio.
 
-Los nombres de botones y los pasos exactos se documentarán conforme se verifique la interfaz de cada versión.
+No necesitas entregar tu contraseña, registrar una cuenta ni autorizar OAuth. La conexión por nombre de usuario no proporciona acceso administrativo a tu cuenta de TikTok. Se requiere Internet para recibir eventos.
+
+[**Consultar documentación completa →**](https://tiklivetools.ultimares.store/)
 
 ## Actualizaciones e integridad
 
-Las publicaciones estables incluirán notas de cambios, requisitos y limitaciones. Conserva una copia de tus configuraciones y archivos multimedia antes de actualizar y sigue las instrucciones de migración de la versión correspondiente.
+Cada publicación estable deberá identificar los cambios, requisitos, limitaciones y el archivo portable correspondiente. Respalda tus configuraciones y recursos personales antes de actualizar y sigue las instrucciones de migración de la publicación.
 
-### Verificar el SHA-256 en Windows
+<details>
+<summary><strong>Verificar el SHA-256 en Windows</strong></summary>
 
-Si la publicación proporciona un SHA-256, puedes comprobar el archivo descargado desde PowerShell:
+Si la publicación proporciona un SHA-256, abre PowerShell en la carpeta del archivo descargado:
 
 ```powershell
 Get-FileHash -Algorithm SHA256 -LiteralPath ".\TikLiveTools-Portable-vX.Y.Z-win-x64.zip"
 ```
 
-Sustituye el nombre del ejemplo por el del archivo descargado y compara el resultado con el hash oficial. Si no coinciden, no ejecutes el contenido y vuelve a descargarlo desde una fuente oficial.
+Sustituye el nombre de ejemplo por el archivo real y compara el resultado con el hash publicado. Si no coincide, no ejecutes el contenido. El hash comprueba integridad respecto de un valor de referencia; no sustituye una firma digital.
 
-El hash permite comparar la integridad con un valor de referencia; no sustituye una firma digital.
+</details>
 
-## Preguntas frecuentes
+## Ayuda
 
 <details>
-<summary><strong>¿Necesito iniciar sesión con TikTok?</strong></summary>
+<summary><strong>No encuentro una descarga estable</strong></summary>
 
-No. El diseño del programa contempla la conexión al LIVE mediante @usuario, sin OAuth, contraseña ni registro en TikLiveTools. Eso no equivale a obtener acceso administrativo a tu cuenta.
+Consulta [Releases](https://github.com/Destruct0rx/TikLiveTools-Releases/releases). Si todavía no hay una publicación estable con el ZIP portable adjunto, aún no existe una descarga estable disponible.
 
 </details>
 
 <details>
-<summary><strong>¿Necesito OBS o una suscripción de pago?</strong></summary>
+<summary><strong>No conecta o no recibe eventos</strong></summary>
 
-No se requiere OBS ni una suscripción de TikLiveTools. La integración prevista se realiza mediante una ventana de overlay capturable en TikTok LIVE Studio.
+Comprueba el @usuario, Internet, el estado de tu LIVE y la compatibilidad de los eventos con tu versión. Revisa el diagnóstico del programa.
+
+</details>
+
+<details>
+<summary><strong>¿Necesito OBS, una cuenta o pagar?</strong></summary>
+
+No se requiere OBS, registro ni una suscripción de TikLiveTools. El proyecto prevé la captura del overlay desde TikTok LIVE Studio.
 
 </details>
 
 <details>
 <summary><strong>¿Puedo usar mis propios GIF, videos y sonidos?</strong></summary>
 
-Sí, la personalización multimedia forma parte del alcance. Consulta los formatos y límites que admita la versión que descargues.
+Sí, forma parte del alcance del programa. Consulta los formatos y límites de la versión publicada.
 
 </details>
 
 <details>
-<summary><strong>¿Por qué no encuentro una descarga estable?</strong></summary>
+<summary><strong>¿Cómo informo de un error?</strong></summary>
 
-Si no existe una publicación estable con un ZIP portable adjunto, el programa aún no está disponible para descarga estable desde este repositorio. Las versiones preliminares no equivalen a una versión estable.
-
-</details>
-
-<details>
-<summary><strong>¿Qué hago si no llegan los eventos del LIVE?</strong></summary>
-
-Comprueba el @usuario, la conexión a Internet, que la transmisión esté activa y los eventos admitidos por tu versión. Consulta la documentación y las limitaciones conocidas.
+Indica la versión de TikLiveTools, la versión de Windows, los pasos para reproducir el problema y el mensaje de error. No compartas contraseñas, cookies, tokens ni datos personales en informes públicos. Consulta las indicaciones de soporte de la web oficial.
 
 </details>
-
-## Documentación y soporte
-
-Visita [tiklivetools.ultimares.store](https://tiklivetools.ultimares.store/) para conocer el programa, las guías de conexión, la configuración de alertas, el overlay y las preguntas frecuentes.
-
-Cuando informes de un problema, indica la versión del programa, tu versión de Windows, los pasos para reproducirlo y el mensaje de error. No compartas contraseñas, cookies, tokens ni datos personales en informes públicos.
 
 ---
 
+<div align="center">
+
+[**Web oficial**](https://tiklivetools.ultimares.store/) · [**GitHub Releases**](https://github.com/Destruct0rx/TikLiveTools-Releases/releases)
+
 Proyecto independiente, no afiliado a TikTok. Este repositorio distribuye el portable; no contiene su código fuente.
+
+</div>
